@@ -25,14 +25,12 @@ function displayApprovedJobs() {
       let jobPostings = JSON.parse(localStorage.getItem(`${type}JobPostings`)) || [];
       jobPostings = jobPostings.filter(job => job.id !== jobId);
       localStorage.setItem(`${type}JobPostings`, JSON.stringify(jobPostings));
-  
-
+        
       displayApprovedJobs();
     } else {
       alert("Incorrect password!");
     }
   }
-
 
   function applyJobPosting(jobId, type) {
    
@@ -60,9 +58,7 @@ function displayApprovedJobs() {
       <button type="button" id="cancelButton">Cancel</button>
     `;
   
-    
     document.body.appendChild(form);
-  
    
     form.addEventListener('submit', function(event) {
       event.preventDefault();
