@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Job Postings</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="job_postings.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Job Postings</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="employer_submission.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Submit A Job</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login_panel.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <section class="hero">
+         <div class="job_submission">
+             <div class="container">
+                 <h2>Submit A Job</h2>
+                 <p>Please fill out the form below to submit your application.</p>      
+                 <form id="jobSubmissionForm">
+                     <label for="jobTitle">Job Title:</label>
+                     <input type="text" id="jobTitle" name="jobTitle" required>
+                     <label for="description">Job Description:</label>
+                     <textarea id="description" name="description" required></textarea>
+                     <label for="contactEmail">Contact Email:</label>
+                     <input type="email" id="contactEmail" name="contactEmail" required>
+                     <button type="submit">Submit Job</button>
+                 </form>
+             </div>
+         </div>
+     </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
